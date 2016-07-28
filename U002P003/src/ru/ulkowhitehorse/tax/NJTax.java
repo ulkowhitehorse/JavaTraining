@@ -1,10 +1,12 @@
+package ru.ulkowhitehorse.tax;
+
 /**
  * Created by mqc647 on 26.07.2016.
  */
 public class NJTax extends Tax {
 
     //Default Constructor
-    NJTax(){
+    public NJTax(){
         super();
     }
     //Constructor
@@ -19,7 +21,7 @@ public class NJTax extends Tax {
         super(gi,st,depen);
     }
 
-    double adjustForStudents (double stateTax){
+    public double adjustForStudents (double stateTax){
         double adjustedTax = stateTax - 500;
         return adjustedTax;
     }

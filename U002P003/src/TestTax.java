@@ -1,10 +1,9 @@
-/**
- * Created by mqc647 on 26.07.2016.
- */
+import ru.ulkowhitehorse.tax.NJTax;
+
 public class TestTax {
     public static void main(String[] args) {
 
-        //Tax t = new Tax();
+        //ru.ulkowhitehorse.tax.Tax t = new ru.ulkowhitehorse.tax.Tax();
         NJTax t = new NJTax();
         t.grossIncome = Integer.parseInt(args[0]);
         t.state = args[1];
