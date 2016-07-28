@@ -5,7 +5,10 @@ public class TestTax {
     public static void main(String[] args) {
 
         //Tax t = new Tax();
-        NJTax t = new NJTax(40000,"NJ",2);
+        NJTax t = new NJTax();
+        t.grossIncome = Integer.parseInt(args[0]);
+        t.state = args[1];
+        t.dependents = Integer.parseInt(args[2]);
 
         double yourTax = t.calcTax();
 

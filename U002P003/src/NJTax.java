@@ -3,6 +3,10 @@
  */
 public class NJTax extends Tax {
 
+    //Default Constructor
+    NJTax(){
+        super();
+    }
     //Constructor
     NJTax(double gi, int depen) {
         grossIncome = gi;

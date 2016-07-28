@@ -2,7 +2,6 @@
  * Created by mqc647 on 26.07.2016.
  */
 public class Tax {
-    int numberOfDependents;
     double grossIncome;
     String state;
     int dependents;
