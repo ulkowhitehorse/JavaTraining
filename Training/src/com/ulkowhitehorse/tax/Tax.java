@@ -1,4 +1,4 @@
-package ru.ulkowhitehorse.Tax;
+package com.ulkowhitehorse.tax;
 
 public class Tax {
     public double grossIncome;

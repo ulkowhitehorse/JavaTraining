@@ -1,6 +1,4 @@
-import ru.ulkowhitehorse.Tax.Tax;
-
-import javax.swing.plaf.synth.SynthEditorPaneUI;
+import com.ulkowhitehorse.tax.Tax;
 
 public class TestTax {
     public static void main(String[] args) {
