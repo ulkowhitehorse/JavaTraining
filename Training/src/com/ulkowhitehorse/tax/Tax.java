@@ -1,11 +1,9 @@
-/**
- * Created by mqc647 on 26.07.2016.
- */
+package com.ulkowhitehorse.tax;
+
 public class Tax {
-    int numberOfDependents;
-    double grossIncome;
-    String state;
-    int dependents;
+    public double grossIncome;
+    public String state;
+    public int dependents;
 
     //Constructor
     Tax (double gi, String st, int depen){
