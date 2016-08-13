@@ -1,36 +1,17 @@
 package ru.ulkowhitehorse.Animal;
 
-//Sub class for all animals
-public class Animal {
-    private String Name;
-    private String Age;
 
-    public Animal(String name, String age){
-        setName(name);
-        setAge(age);
-    }
+public interface Animal {
 
-    public void setName(String n){
-        Name = n;
-    }
+    public String getName();
+    public int getAge();
+    public void getAnimal();
 
-    public void setAge(String a){
-        Age = a;
-    }
+    //make a voice
+    void voice();
 
-    public String getName(){
-        return Name;
-    }
+    void run();
 
-    public String getAge(){
-        return Age;
-    }
+    void haunch();
 
-    private void run(){
-        System.out.println("Run");
-    }
-
-    private void haunch(){
-        System.out.println("Haunch");
-    }
 }
