@@ -24,16 +24,16 @@ public class Dog extends Animal implements AnimalActions {
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return "Dog";
     }
 
     @Override
-    public void isSatisfaction() {
-        if (getSatisfaction() < 50){
-            isSatisfaction = false;
-        }
-        else
-            isSatisfaction = true;
+    public boolean setIsSatisfaction(int satisfaction) {
+        if (satisfaction < 70)
+            return false;
+        else return true;
     }
+
+
 }

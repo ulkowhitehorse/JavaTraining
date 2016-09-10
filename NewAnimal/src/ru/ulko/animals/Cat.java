@@ -28,12 +28,10 @@ public class Cat extends Animal implements AnimalActions{
     }
 
     @Override
-    public void isSatisfaction() {
-        if (getSatisfaction() < 70){
-            isSatisfaction = false;
-        }
-        else
-            isSatisfaction = true;
+    boolean setIsSatisfaction(int satisfaction) {
+        if (satisfaction < 50)
+            return false;
+        else return true;
     }
 
 

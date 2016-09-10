@@ -21,22 +21,6 @@ public abstract class Animal {
         nickName = nick;
     };
 
-    //Satisfaction
-    private int satisfaction = 100;
-
-    public int getSatisfaction(){
-        return satisfaction;
-    };
-
-    public void setSatisfaction(int satisfaction){
-        if (satisfaction >= 0 & satisfaction <= 100)
-            this.satisfaction = satisfaction;
-        else
-            System.out.println("Satisfaction can't be less then 0 and more then 100");
-    };
-
-    protected boolean isSatisfaction = true;
-    abstract void isSatisfaction();
 
     //Species
     private String species;
@@ -67,6 +51,20 @@ public abstract class Animal {
         System.out.println("I sleap");
     };
 
+    //Satisfaction
+    protected boolean isSatisfaction = true;
+
+    private int satisfaction = 100;
+    public int getSatisfaction(){
+        return satisfaction;
+    }
+
+    public void setSatisfaction(int satisfaction){
+        this.satisfaction = satisfaction;
+        this.isSatisfaction = setIsSatisfaction(satisfaction);
+    }
+
+    abstract boolean setIsSatisfaction(int satisfaction);
 
     //Portraiture
     public void portraiture(){
