@@ -3,7 +3,7 @@ package ru.ulko.animals;
 /**
  * Created by mqc647 on 09.09.2016.
  */
-public class Dog extends Animal implements AnimalActions {
+public class Dog extends Animal {
     public Dog(String nickName, String species, int age) {
         super(nickName, species, age);
     }
@@ -30,7 +30,7 @@ public class Dog extends Animal implements AnimalActions {
 
     @Override
     public boolean setIsSatisfaction(int satisfaction) {
-        if (satisfaction < 70)
+        if (satisfaction < 50)
             return false;
         else return true;
     }

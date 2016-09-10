@@ -1,6 +1,6 @@
 package ru.ulko.animals;
 
-public class Cat extends Animal implements AnimalActions{
+public class Cat extends Animal{
 
 
     public Cat(String nickName, String species, int age) {
@@ -29,7 +29,7 @@ public class Cat extends Animal implements AnimalActions{
 
     @Override
     boolean setIsSatisfaction(int satisfaction) {
-        if (satisfaction < 50)
+        if (satisfaction < 70)
             return false;
         else return true;
     }

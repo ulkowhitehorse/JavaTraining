@@ -7,11 +7,13 @@ public class TestAnimal {
         animals[0] = new Dog("German", "Dvornjaga", 3);
         animals[0].setSatisfaction(10);
         animals[1] = new Cat("Big Sonya", "Pers", 3);
+        animals[1].setSatisfaction(60);
         animals[2] = new Cat("Small Sonya", "Dvornjaga", 2);
 
         for (Animal p : animals){
             if (p != null){
                 p.portraiture();
+                p.say();
                 System.out.println("====================");
             }
             else

@@ -1,7 +1,7 @@
 package ru.ulko.animals;
 
 
-public abstract class Animal {
+public abstract class Animal implements AnimalActions {
 
     public Animal(String nickName, String species, int age){
         this.nickName = nickName;
