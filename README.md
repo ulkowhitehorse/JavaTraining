@@ -8,3 +8,4 @@ git push -u origin master
 git pull 
 git merge "@branch"
 help by link https://habrahabr.ru/post/174467/
+slides and source by link https://code.google.com/archive/p/practicaljava/wikis/Slides.wiki
