@@ -26,7 +26,9 @@ public class CalculateEngine implements ActionListener {
 
         String clickedButtonLabel  = clickedButton.getText();
 
-        JOptionPane.showConfirmDialog(null, "You pressed " + clickedButtonLabel, "Just a test", JOptionPane.PLAIN_MESSAGE);
+        String displayFieldText = GridBagParent.getDisplayFieldValue();
+
+        GridBagParent.setDisplayFieldValue(displayFieldText+clickedButtonLabel);
 
     }
 }

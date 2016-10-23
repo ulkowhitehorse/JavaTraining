@@ -3,40 +3,31 @@ import java.awt.*;
 
 public class GridBag {
 
-    private CalculateEngine calcEngine = new CalculateEngine(this);
 
-    private JTextField displayField = new JTextField();
+
+    private JTextField displayField;
+
     public void setDisplayFieldValue(String value){
+
         displayField.setText(value);
     }
+
     public String getDisplayFieldValue(){
         return displayField.getText();
     }
 
 
-    JButton b1;
-    JButton b2;
-    JButton b3;
-    JButton b4;
-    JButton b5;
-    JButton b6;
-    JButton b7;
-    JButton b8;
-    JButton b9;
+    private JButton b1;
+    private JButton b2;
+    private JButton b3;
+    private JButton b4;
+    private JButton b5;
+    private JButton b6;
+    private JButton b7;
+    private JButton b8;
+    private JButton b9;
 
     JPanel windowContent;
-    GridBagLayout gb;
-    JFrame frame;
-    GridBagConstraints constrText;
-    GridBagConstraints constr1;
-    GridBagConstraints constr2;
-    GridBagConstraints constr3;
-    GridBagConstraints constr4;
-    GridBagConstraints constr5;
-    GridBagConstraints constr6;
-    GridBagConstraints constr7;
-    GridBagConstraints constr8;
-    GridBagConstraints constr9;
 
 
     GridBag() {
@@ -44,14 +35,16 @@ public class GridBag {
             // Set the GridBagLayout for the window’s content pane
             windowContent = new JPanel();
 
-            gb = new GridBagLayout();
+            GridBagLayout gb = new GridBagLayout();
 
             windowContent.setLayout(gb);
+
+            displayField = new JTextField();
 
             // Create an instance of the GridBagConstraints!
             // You’ll have to repeat these lines for each component!
             // that you’d like to add to the grid cell!
-            constrText = new GridBagConstraints();
+            GridBagConstraints constrText = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -87,9 +80,10 @@ public class GridBag {
 
 
 
+            CalculateEngine calcEngine = new CalculateEngine(this);
             // Button 7
 
-            constr7 = new GridBagConstraints();
+            GridBagConstraints constr7 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -130,7 +124,7 @@ public class GridBag {
 
             // Button 8
 
-            constr8 = new GridBagConstraints();
+            GridBagConstraints constr8 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -158,19 +152,19 @@ public class GridBag {
             constr8.anchor = constr8.CENTER;
 
             b8 = new JButton("8");
-            b8.addActionListener(calcEngine);
+
 
             // set constrains for this field
             gb.setConstraints(b8, constr8);
 
             // add the text field to the window
-            windowContent.add(b8);
             b8.addActionListener(calcEngine);
+            windowContent.add(b8);
 
 
             // Button 9
 
-            constr9 = new GridBagConstraints();
+            GridBagConstraints constr9 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -209,7 +203,7 @@ public class GridBag {
 
             // Button 4
 
-            constr4 = new GridBagConstraints();
+            GridBagConstraints constr4 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -248,7 +242,7 @@ public class GridBag {
 
             // Button 5
 
-            constr5 = new GridBagConstraints();
+            GridBagConstraints constr5 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -288,7 +282,7 @@ public class GridBag {
 
             // Button 6
 
-            constr6 = new GridBagConstraints();
+            GridBagConstraints constr6 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -327,7 +321,7 @@ public class GridBag {
 
             // Button 1
 
-            constr1 = new GridBagConstraints();
+            GridBagConstraints constr1 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -354,20 +348,20 @@ public class GridBag {
             // position of the component within the cell!
             constr1.anchor = constr1.CENTER;
 
-            b7 = new JButton("1");
+            b1 = new JButton("1");
 
 
             // set constrains for this field
-            gb.setConstraints(b7, constr1);
+            gb.setConstraints(b1, constr1);
 
             // add the text field to the window
-            windowContent.add(b7);
-            b7.addActionListener(calcEngine);
+            windowContent.add(b1);
+            b1.addActionListener(calcEngine);
 
 
             // Button 2
 
-            constr2 = new GridBagConstraints();
+            GridBagConstraints constr2 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -394,7 +388,7 @@ public class GridBag {
             // position of the component within the cell!
             constr2.anchor = constr2.CENTER;
 
-            JButton b2 = new JButton("2");
+            b2 = new JButton("2");
 
 
             // set constrains for this field
@@ -406,7 +400,7 @@ public class GridBag {
 
             // Button 3
 
-            constr3 = new GridBagConstraints();
+            GridBagConstraints constr3 = new GridBagConstraints();
 
             //set constraints for the FlowLay’s displayField:
 
@@ -445,7 +439,7 @@ public class GridBag {
 
             // 5. Create the frame and add the panel to it
             // Создаем внешний контейнер JFrame
-            frame = new JFrame("My First calculator");
+            JFrame frame = new JFrame("My First calculator");
 
             // 6. Add the panel to top-level container
             frame.setContentPane(windowContent);
