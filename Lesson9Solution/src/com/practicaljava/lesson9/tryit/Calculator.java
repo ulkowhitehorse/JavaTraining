@@ -72,7 +72,7 @@ public class Calculator {
 	  buttonPoint = new JButton(".");
 	  buttonEqual=new JButton("=");
 
-	 // Create the panel with the GridLayout with 12 buttons – 
+	 // Create the panel with the GridLayout with 12 buttons ? 
         //10 numeric ones, period, and the equal sign   
 
 		  p1 = new JPanel();

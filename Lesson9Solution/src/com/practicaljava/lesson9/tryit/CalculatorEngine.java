@@ -20,7 +20,7 @@ public class CalculatorEngine implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// Get the source of this action
 		JButton clickedButton = (JButton) e.getSource();
-		// Get the existing text from the Calculator’s
+		// Get the existing text from the Calculator?s
 		// display field. Reaching inside another object is bad.
 		String dispFieldText = parent.getDisplayValue();
 		dot = dispFieldText.contains(".");
