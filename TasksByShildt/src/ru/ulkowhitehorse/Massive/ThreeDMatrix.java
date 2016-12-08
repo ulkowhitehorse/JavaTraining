@@ -1,4 +1,4 @@
-package ru.ulkowhitehorse.ru.ulkowhitehorse.massive;
+package ru.ulkowhitehorse.Massive;
 
 /**
  * 	three-dimensional array 3*4*5

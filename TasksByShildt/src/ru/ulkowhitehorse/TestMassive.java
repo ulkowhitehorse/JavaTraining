@@ -1,7 +1,6 @@
 package ru.ulkowhitehorse;
 
-
-import ru.ulkowhitehorse.ru.ulkowhitehorse.massive.ThreeDMatrix;
+import ru.ulkowhitehorse.Massive.ThreeDMatrix;
 
 /**
  * Created by Ulko on 19.11.2016.
@@ -12,4 +11,5 @@ public class TestMassive {
         ThreeDMatrix matrix = new ThreeDMatrix();
         matrix.printElements();
     }
+
 }
